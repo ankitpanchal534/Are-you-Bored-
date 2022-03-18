@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jaadu</title>
+</head>
+
+<body>
+    <div class="main">
+        <!-- dialog box area -->
+        <div class="dialog-box">
+            <div class="dialog-content">
+                <h1> Are you Bored ??</h1>
+                <span>Justt open the webSite & enjoy the Random things of internet</span><br>
+
+                <button onclick="popupclose()" class="close">I want to Explore !!</button>
+            </div>
+            <!-- dialog box ends here -->
+
+
+
+        </div>
+        <div class="main-content">
+            <ul class="ul-header">
+                <h1>Welcome to Wonderland !!</h1>
+                <button class="header-btn">About</button>
+                <button class="header-btn">Home</button>
+                <button class="header-btn">More </button>
+            </ul>
+
+        </div>
+
+    </div>
+    <div id="show-card">
+
+    </div>
+    <button class="close" onclick="getData()">Random Search</button>
+    <button class="close" onclick="getExcuses()"> Random Excuses</button>
+    <button class="close" onclick="getFunFact()"> Random Fun Fact</button>
+
+    </div>
+
+    <div class="url-short">
+        <form method="dialog">
+            <input id="long-url" class="input-box" placeholder="Paste Long URL here" required>
+            <input id="name" placeholder="Enter Unique Text" class="input-box" required>
+            <button class="close" onclick="getUrlShort()" type="button"> Short Url</button>
+        </form><br>
+        Shorten Url <input id="url-short-value" value="" placeholder="https://ulvis.net/{unique text}" readonly>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
